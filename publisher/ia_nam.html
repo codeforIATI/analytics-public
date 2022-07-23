@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <style>
+  em {
+    font-style: italic;
+  }
+  .big-number {
+    font-size: 100px;
+  }
+  .title-number {
+    font-weight: bold;
+    float: left;
+    width: 20%;
+  }
+  .title-text {
+    float: left;
+  }
+  .panel-heading {
+    clear: both;
+  }
+  .break {
+    word-break:break-all;
+  }
+  .panel-body h4, .panel-body h5 {
+    margin-top: 24px;
+  }
+  .panel-body h4:first-of-type, .panel-body h5:first-of-type {
+    margin-top: 10px;
+  }
+
+  .tablesorter-default .tablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-position: center left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .tablesorter-default thead .headerSortUp,
+  .tablesorter-default thead .tablesorter-headerSortUp,
+  .tablesorter-default thead .tablesorter-headerAsc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-default thead .headerSortDown,
+  .tablesorter-default thead .tablesorter-headerSortDown,
+  .tablesorter-default thead .tablesorter-headerDesc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-header-inner {
+    margin-left:10px;
+  }
+  .tablesorter-headerRow {
+    background-color:white;
+  }
+  html,body {
+    height:100%;
+  }
+
+  #wrap {
+    min-height:100%;
+    height:auto;
+    margin:0 auto -60px;
+    padding:0 0 60px;
+  }
+
+  #footer {
+    background-color:#f5f5f5;
+    margin-top: 30px
+  }
+
+  .container .text-muted {
+    margin: 20px 0;
+  }
+
+  .navbar-default {
+     margin-bottom: 0px;
+  }
+
+  .navbar-brand {
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  a.popover-html:focus {
+    outline: none;
+  }
+  </style>
+  <link rel="icon" href="/favicon.ico">
+  <title>
+Code for IATI Analytics -  Publisher: InterAction&#39;s NGO Aid Map
+</title>
+
+  
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" data-c4i-toggle="sidebar" aria-controls="c4i-sidebar" aria-expanded="false" aria-label="Toggle Code for IATI sidebar"><img src="https://codeforiati.org/assets/img/logo.png" alt="Code for IATI" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+            <li ><a href="../index.html">Home</a></li>
+        
+            <li ><a href="../headlines.html">Headlines</a></li>
+        
+            <li ><a href="../data_quality.html">Data Quality</a></li>
+        
+            <li ><a href="../publishing_stats.html">Publishing Statistics</a></li>
+        
+            <li ><a href="../exploring_data.html">Exploring Data</a></li>
+        
+            <li ><a href="../faq.html">FAQ</a></li>
+        
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="container">
+    
+      
+        <div class="page-header">
+          
+<a href="https://github.com/codeforIATI/IATI-Stats-public/tree/gh-pages/current/aggregated-publisher/ia_nam/" style="float:right">(Publisher Stats JSON)</a>
+<h1>Publisher: InterAction&#39;s NGO Aid Map</h1>
+<p class="lead"></p>
+
+        </div>
+      
+
+      
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title" id="list_fail_validation">Table of Contents</h3></div>
+        <div class="panel-body">
+            <ul>
+                <li><a href="#h_headlines">Headlines</a>
+                <li><a href="#h_dataquality">Data Quality</a>
+                    <ul>
+                        
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li><a href="#h_financial">Financial</a></li>
+                <li><a href="#h_exploringdata">Exploring Data</a>
+                    <ul>
+                        <li><a href="#p_files">Files</a>
+                        <li><a href="#p_codelists">Codelist values</a>
+                        <li><a href="#p_elements">Elements and Attributes published</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <h2 id="h_headlines">Headlines</h2>
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>On the Registry</td>
+                <td><a href="http://iatiregistry.org/publisher/ia_nam">ia_nam</a></td>
+            </tr>
+            <tr>
+                <td>Reporting Org on Registry</td>
+                <td>
+                    <code>US-EIN-13-3287064NAM</code>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Reporting Org(s) in Data</td>
+                <td>
+                
+                <code>US-EIN-13-3287064NAM</code>
+                
+                </td>
+            </tr><tr>
+                <td>Activity Files</td>
+                <td>105</td>
+            </tr><tr>
+                <td>Organisation Files</td>
+                <td>0</td>
+            </tr><tr>
+                <td>Total File Size</td>
+                <td>41.9 MB</td>
+            </tr><tr>
+                <td>Activities</td>
+                <td>12373</td>
+            </tr><tr>
+                <td>Unique Activities</td>
+                <td>12373</td>
+            </tr><tr>
+                <td>Organisations</td>
+                <td>0</td>
+            </tr><tr>
+                <td>Versions</td>
+                <td>
+                
+                <code>2.02</code>
+                
+                </td>
+            </tr><tr>
+                <td>Hierarchies</td>
+                <td>
+                
+                <code>null</code>
+                
+                </td>
+            </tr><tr>
+                <td>Licenses</td>
+                <td>
+                
+                <code><a href="../license/cc-by.html">cc-by</a></code>
+                
+                </td>
+            </tr><tr>
+                <td>Files failing validation</td>
+                <td>
+                0
+                </td>
+            </tr>
+        </body>
+    </table>
+    </div>
+    </div>
+    
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activities" class="title-number">12373</span>
+              <span class="title-text">Activities</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/activities.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_activities.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activity-files" class="title-number">105</span>
+              <span class="title-text">Activity Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/activity_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_activity_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="organisation-files" class="title-number">0</span>
+              <span class="title-text">Organisation Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/organisation_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_organisation_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-per-version" class="title-number"></span>
+              <span class="title-text">Files per version</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/versions.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_versions.png" width="100%" />
+            
+            <img src="../publisher_imgs/ia_nam_versions_legend.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="total-file-size" class="title-number">41.9 MB</span>
+              <span class="title-text">Total File Size</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/file_size.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_file_size.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-failing-validation" class="title-number"></span>
+              <span class="title-text">Files failing validation</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/validation.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_validation.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-where-xml-is-not-well-formed" class="title-number">0</span>
+              <span class="title-text">Files where XML is not well-formed</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/ia_nam/invalidxml.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/ia_nam_invalidxml.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="h_dataquality">Data Quality</h2>
+
+    
+
+    <div class="row">
+    
+
+    
+
+    
+
+    </div><!-- .row -->
+
+    
+
+    
+    <p>No issues were found.</p>
+    
+
+    <h2 id="h_financial">Financial</h2>
+
+    
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Budgets</h3>
+    </div>
+    <div class="panel-body">
+        <p>The below figures are calculated based on the data contained within the <code>&lt;budget&gt;</code> element for each reported activity. Original and revised elements are based on the value declared in the <code><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/budget/#iati-activities-iati-activity-budget-type">budget/@type</a></code> attribute. Where budgets fall across two calendar years, the month of the <code>&lt;period-end&gt;</code> date is used to determine annual groupings, with budgets for periods ending January-June added to the previous calendar year.</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Count (all)</th>
+                <th>Sum (all)</th>
+                <th>Count (Original)</th>
+                <th>Sum (Original)</th>
+                <th>Count (Revised)</th>
+                <th>Sum (Revised)</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+        </tbody>
+    </table>
+    </div>
+
+
+    <h2 id="h_exploringdata">Exploring Data</h2>
+
+    <div class="panel panel-default" id="p_files">
+    <div class="panel-heading">
+        <h3 class="panel-title">Files</h3>
+    </div>
+    <table class="table table-striped exploring-data">
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Activities <a href="https://stats.codeforiati.org/current/inverted-file-publisher/ia_nam/activities.json">(J)</a></th>
+                <th>Organisations <a href="https://stats.codeforiati.org/current/inverted-file-publisher/ia_nam/organisations.json">(J)</a></th>
+                <th>File Size <a href="https://stats.codeforiati.org/current/inverted-file-publisher/ia_nam/file_size.json">(J)</a></th>
+                <th>Version <a href="https://stats.codeforiati.org/current/inverted-file-publisher/ia_nam/versions.json">(J)</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o108">ia_nam-o108</a></td>
+                <td>16</td>
+                <td>0</td>
+                <td data-bytes="100650">100.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o11">ia_nam-o11</a></td>
+                <td>24</td>
+                <td>0</td>
+                <td data-bytes="116670">116.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o110">ia_nam-o110</a></td>
+                <td>889</td>
+                <td>0</td>
+                <td data-bytes="2490847">2.5 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o115">ia_nam-o115</a></td>
+                <td>49</td>
+                <td>0</td>
+                <td data-bytes="151923">151.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o117">ia_nam-o117</a></td>
+                <td>56</td>
+                <td>0</td>
+                <td data-bytes="220058">220.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o121">ia_nam-o121</a></td>
+                <td>82</td>
+                <td>0</td>
+                <td data-bytes="208793">208.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o122">ia_nam-o122</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="36322">36.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o125">ia_nam-o125</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="39365">39.4 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o126">ia_nam-o126</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="14448">14.4 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o127">ia_nam-o127</a></td>
+                <td>5</td>
+                <td>0</td>
+                <td data-bytes="15969">16.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o128">ia_nam-o128</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="49541">49.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o129">ia_nam-o129</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="123781">123.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o13">ia_nam-o13</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="48820">48.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o132">ia_nam-o132</a></td>
+                <td>18</td>
+                <td>0</td>
+                <td data-bytes="32891">32.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o134">ia_nam-o134</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="55467">55.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o135">ia_nam-o135</a></td>
+                <td>193</td>
+                <td>0</td>
+                <td data-bytes="531171">531.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o136">ia_nam-o136</a></td>
+                <td>60</td>
+                <td>0</td>
+                <td data-bytes="210289">210.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o137">ia_nam-o137</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="111348">111.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o146">ia_nam-o146</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="93594">93.6 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o15">ia_nam-o15</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="26579">26.6 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o151">ia_nam-o151</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="30324">30.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o154">ia_nam-o154</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="50758">50.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o155">ia_nam-o155</a></td>
+                <td>50</td>
+                <td>0</td>
+                <td data-bytes="254554">254.6 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o157">ia_nam-o157</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="40291">40.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o158">ia_nam-o158</a></td>
+                <td>20</td>
+                <td>0</td>
+                <td data-bytes="71129">71.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o16">ia_nam-o16</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="51241">51.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o160">ia_nam-o160</a></td>
+                <td>33</td>
+                <td>0</td>
+                <td data-bytes="102726">102.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o161">ia_nam-o161</a></td>
+                <td>35</td>
+                <td>0</td>
+                <td data-bytes="132713">132.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o162">ia_nam-o162</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="86341">86.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o164">ia_nam-o164</a></td>
+                <td>38</td>
+                <td>0</td>
+                <td data-bytes="111159">111.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o166">ia_nam-o166</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="32335">32.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o167">ia_nam-o167</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="52959">53.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o168">ia_nam-o168</a></td>
+                <td>34</td>
+                <td>0</td>
+                <td data-bytes="147275">147.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o169">ia_nam-o169</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="38024">38.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o17">ia_nam-o17</a></td>
+                <td>210</td>
+                <td>0</td>
+                <td data-bytes="587896">587.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o177">ia_nam-o177</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="86782">86.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o18">ia_nam-o18</a></td>
+                <td>48</td>
+                <td>0</td>
+                <td data-bytes="139219">139.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o185">ia_nam-o185</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="50476">50.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o19">ia_nam-o19</a></td>
+                <td>356</td>
+                <td>0</td>
+                <td data-bytes="1106282">1.1 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o197">ia_nam-o197</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="2533">2.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o2">ia_nam-o2</a></td>
+                <td>257</td>
+                <td>0</td>
+                <td data-bytes="1103247">1.1 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o20">ia_nam-o20</a></td>
+                <td>204</td>
+                <td>0</td>
+                <td data-bytes="1005138">1.0 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o204">ia_nam-o204</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="6132">6.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o21">ia_nam-o21</a></td>
+                <td>54</td>
+                <td>0</td>
+                <td data-bytes="189678">189.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o222">ia_nam-o222</a></td>
+                <td>5</td>
+                <td>0</td>
+                <td data-bytes="20149">20.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o223">ia_nam-o223</a></td>
+                <td>12</td>
+                <td>0</td>
+                <td data-bytes="31090">31.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o225">ia_nam-o225</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td data-bytes="28650">28.6 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o229">ia_nam-o229</a></td>
+                <td>9</td>
+                <td>0</td>
+                <td data-bytes="29940">29.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o23">ia_nam-o23</a></td>
+                <td>110</td>
+                <td>0</td>
+                <td data-bytes="367774">367.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o24">ia_nam-o24</a></td>
+                <td>164</td>
+                <td>0</td>
+                <td data-bytes="672056">672.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o27">ia_nam-o27</a></td>
+                <td>222</td>
+                <td>0</td>
+                <td data-bytes="1353455">1.4 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o28">ia_nam-o28</a></td>
+                <td>42</td>
+                <td>0</td>
+                <td data-bytes="150143">150.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o29">ia_nam-o29</a></td>
+                <td>208</td>
+                <td>0</td>
+                <td data-bytes="811114">811.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o31">ia_nam-o31</a></td>
+                <td>30</td>
+                <td>0</td>
+                <td data-bytes="127961">128.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o33">ia_nam-o33</a></td>
+                <td>64</td>
+                <td>0</td>
+                <td data-bytes="274846">274.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o34">ia_nam-o34</a></td>
+                <td>534</td>
+                <td>0</td>
+                <td data-bytes="2101174">2.1 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o35">ia_nam-o35</a></td>
+                <td>32</td>
+                <td>0</td>
+                <td data-bytes="158484">158.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o37">ia_nam-o37</a></td>
+                <td>28</td>
+                <td>0</td>
+                <td data-bytes="204274">204.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o379">ia_nam-o379</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="20612">20.6 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o38">ia_nam-o38</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="3665">3.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o39">ia_nam-o39</a></td>
+                <td>527</td>
+                <td>0</td>
+                <td data-bytes="1543287">1.5 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o3997">ia_nam-o3997</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="38301">38.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o4">ia_nam-o4</a></td>
+                <td>713</td>
+                <td>0</td>
+                <td data-bytes="2337581">2.3 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o40">ia_nam-o40</a></td>
+                <td>94</td>
+                <td>0</td>
+                <td data-bytes="360225">360.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o401">ia_nam-o401</a></td>
+                <td>48</td>
+                <td>0</td>
+                <td data-bytes="129239">129.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o42">ia_nam-o42</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="43887">43.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o43">ia_nam-o43</a></td>
+                <td>796</td>
+                <td>0</td>
+                <td data-bytes="1998243">2.0 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o44">ia_nam-o44</a></td>
+                <td>147</td>
+                <td>0</td>
+                <td data-bytes="483651">483.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o45">ia_nam-o45</a></td>
+                <td>376</td>
+                <td>0</td>
+                <td data-bytes="1370762">1.4 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o5">ia_nam-o5</a></td>
+                <td>29</td>
+                <td>0</td>
+                <td data-bytes="113550">113.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o50">ia_nam-o50</a></td>
+                <td>296</td>
+                <td>0</td>
+                <td data-bytes="1250155">1.3 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o52">ia_nam-o52</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="15270">15.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o5471">ia_nam-o5471</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="10988">11.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o56">ia_nam-o56</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td data-bytes="8976">9.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o57">ia_nam-o57</a></td>
+                <td>96</td>
+                <td>0</td>
+                <td data-bytes="282699">282.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o58">ia_nam-o58</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="61791">61.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o5884">ia_nam-o5884</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td data-bytes="8216">8.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o59">ia_nam-o59</a></td>
+                <td>1622</td>
+                <td>0</td>
+                <td data-bytes="3842351">3.8 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o60">ia_nam-o60</a></td>
+                <td>56</td>
+                <td>0</td>
+                <td data-bytes="216829">216.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o61">ia_nam-o61</a></td>
+                <td>175</td>
+                <td>0</td>
+                <td data-bytes="682266">682.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o6169">ia_nam-o6169</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="59301">59.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o6170">ia_nam-o6170</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="10081">10.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o64">ia_nam-o64</a></td>
+                <td>7</td>
+                <td>0</td>
+                <td data-bytes="30220">30.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o65">ia_nam-o65</a></td>
+                <td>329</td>
+                <td>0</td>
+                <td data-bytes="1144725">1.1 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o66">ia_nam-o66</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="5313">5.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o67">ia_nam-o67</a></td>
+                <td>204</td>
+                <td>0</td>
+                <td data-bytes="561872">561.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o69">ia_nam-o69</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td data-bytes="31993">32.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o71">ia_nam-o71</a></td>
+                <td>228</td>
+                <td>0</td>
+                <td data-bytes="825782">825.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o72">ia_nam-o72</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td data-bytes="4581">4.6 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o73">ia_nam-o73</a></td>
+                <td>82</td>
+                <td>0</td>
+                <td data-bytes="276252">276.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o79">ia_nam-o79</a></td>
+                <td>47</td>
+                <td>0</td>
+                <td data-bytes="171725">171.7 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o8">ia_nam-o8</a></td>
+                <td>1067</td>
+                <td>0</td>
+                <td data-bytes="2950879">3.0 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o81">ia_nam-o81</a></td>
+                <td>17</td>
+                <td>0</td>
+                <td data-bytes="58750">58.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o82">ia_nam-o82</a></td>
+                <td>15</td>
+                <td>0</td>
+                <td data-bytes="63256">63.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o83">ia_nam-o83</a></td>
+                <td>328</td>
+                <td>0</td>
+                <td data-bytes="2111061">2.1 MB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o84">ia_nam-o84</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="30894">30.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o86">ia_nam-o86</a></td>
+                <td>55</td>
+                <td>0</td>
+                <td data-bytes="253260">253.3 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o87">ia_nam-o87</a></td>
+                <td>126</td>
+                <td>0</td>
+                <td data-bytes="501463">501.5 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o9">ia_nam-o9</a></td>
+                <td>168</td>
+                <td>0</td>
+                <td data-bytes="796846">796.8 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o90">ia_nam-o90</a></td>
+                <td>14</td>
+                <td>0</td>
+                <td data-bytes="91858">91.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o93">ia_nam-o93</a></td>
+                <td>99</td>
+                <td>0</td>
+                <td data-bytes="335906">335.9 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o94">ia_nam-o94</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td data-bytes="54223">54.2 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o95">ia_nam-o95</a></td>
+                <td>25</td>
+                <td>0</td>
+                <td data-bytes="128988">129.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o97">ia_nam-o97</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td data-bytes="26130">26.1 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/ia_nam-o98">ia_nam-o98</a></td>
+                <td>11</td>
+                <td>0</td>
+                <td data-bytes="56994">57.0 kB</td>
+                <td>2.02</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    
+    
+    <div class="panel panel-default" id="p_codelists">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/ia_nam/codelist_values.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Codelist Values (version 2.xx)</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Codelist</th>
+                <th>Values on Codelist</th>
+                <th>Values not on Codelist</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-date_@type.html">.//activity-date/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityDateType">ActivityDateType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-date/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;425 <code>2</code>:&nbsp;11948 <code>3</code>:&nbsp;425 <code>4</code>:&nbsp;11948 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-status_@code.html">.//activity-status/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityStatus">ActivityStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-status/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;425 <code>3</code>:&nbsp;11948 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/contact-info_@type.html">.//contact-info/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ContactType">ContactType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//contact-info/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;12373 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/description_@type.html">.//description/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/DescriptionType">DescriptionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//description/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;12373 <code>3</code>:&nbsp;4357 <code>4</code>:&nbsp;4454 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_@format.html">.//document-link/@format</a></td>
+                <td><a href="https://codelists.codeforiati.org/FileFormat">FileFormat</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/@format" role="button" tabindex="0" data-trigger="focus" data-content="<code>text/html</code>:&nbsp;4353 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/document-link_category_@code.html">.//document-link/category/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/DocumentCategory">DocumentCategory</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//document-link/category/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>A12</code>:&nbsp;4353 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_administrative_@vocabulary.html">.//location/administrative/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicVocabulary">GeographicVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/administrative/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>G1</code>:&nbsp;8937 <code>G2</code>:&nbsp;3473 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_feature-designation_@code.html">.//location/feature-designation/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/LocationType">LocationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/feature-designation/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>ADM1</code>:&nbsp;8742 <code>ADM2</code>:&nbsp;995 <code>ADM3</code>:&nbsp;2673 ">3</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_location-class_@code.html">.//location/location-class/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicLocationClass">GeographicLocationClass</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/location-class/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;12410 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_location-id_@vocabulary.html">.//location/location-id/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicVocabulary">GeographicVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/location-id/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>G1</code>:&nbsp;8937 <code>G2</code>:&nbsp;3473 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_exactness_@code.html">.//location/exactness/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicExactness">GeographicExactness</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/exactness/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;12410 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/other-identifier_@type.html">.//other-identifier/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OtherIdentifierType">OtherIdentifierType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//other-identifier/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>A1</code>:&nbsp;12373 <code>B9</code>:&nbsp;6251 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@role.html">.//participating-org/@role</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationRole">OrganisationRole</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@role" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;7930 <code>4</code>:&nbsp;22593 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@type.html">.//participating-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;1047 <code>15</code>:&nbsp;481 <code>21</code>:&nbsp;14956 <code>22</code>:&nbsp;3146 <code>23</code>:&nbsp;264 <code>30</code>:&nbsp;15 <code>40</code>:&nbsp;642 <code>60</code>:&nbsp;382 <code>70</code>:&nbsp;467 <code>80</code>:&nbsp;272 ">10</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-country_@code.html">.//recipient-country/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Country">Country</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-country/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>AF</code>:&nbsp;141 <code>AG</code>:&nbsp;4 <code>AI</code>:&nbsp;2 <code>AL</code>:&nbsp;28 <code>AM</code>:&nbsp;48 <code>AO</code>:&nbsp;23 <code>AR</code>:&nbsp;19 <code>AS</code>:&nbsp;1 <code>AW</code>:&nbsp;1 <code>AZ</code>:&nbsp;15 <code>BA</code>:&nbsp;12 <code>BB</code>:&nbsp;2 <code>BD</code>:&nbsp;201 <code>BE</code>:&nbsp;2 <code>BF</code>:&nbsp;86 <code>BG</code>:&nbsp;9 <code>BH</code>:&nbsp;2 <code>BI</code>:&nbsp;73 <code>BJ</code>:&nbsp;37 <code>BN</code>:&nbsp;2 <code>BO</code>:&nbsp;59 <code>BR</code>:&nbsp;79 <code>BS</code>:&nbsp;11 <code>BT</code>:&nbsp;3 <code>BW</code>:&nbsp;9 <code>BY</code>:&nbsp;4 <code>BZ</code>:&nbsp;44 <code>CA</code>:&nbsp;9 <code>CD</code>:&nbsp;309 <code>CF</code>:&nbsp;95 <code>CG</code>:&nbsp;11 <code>CI</code>:&nbsp;66 <code>CK</code>:&nbsp;1 <code>CL</code>:&nbsp;33 <code>CM</code>:&nbsp;69 <code>CN</code>:&nbsp;75 <code>CO</code>:&nbsp;84 <code>CR</code>:&nbsp;16 <code>CU</code>:&nbsp;24 <code>CV</code>:&nbsp;2 <code>DE</code>:&nbsp;2 <code>DJ</code>:&nbsp;7 <code>DM</code>:&nbsp;8 <code>DO</code>:&nbsp;135 <code>DZ</code>:&nbsp;4 <code>EC</code>:&nbsp;80 <code>EE</code>:&nbsp;1 <code>EG</code>:&nbsp;24 <code>ER</code>:&nbsp;4 <code>ES</code>:&nbsp;1 <code>ET</code>:&nbsp;407 <code>FJ</code>:&nbsp;4 <code>FM</code>:&nbsp;3 <code>FR</code>:&nbsp;1 <code>GA</code>:&nbsp;1 <code>GB</code>:&nbsp;2 <code>GD</code>:&nbsp;5 <code>GE</code>:&nbsp;54 <code>GH</code>:&nbsp;207 <code>GM</code>:&nbsp;11 <code>GN</code>:&nbsp;42 <code>GQ</code>:&nbsp;3 <code>GR</code>:&nbsp;26 <code>GT</code>:&nbsp;259 <code>GU</code>:&nbsp;1 <code>GW</code>:&nbsp;5 <code>GY</code>:&nbsp;11 <code>HN</code>:&nbsp;170 <code>HR</code>:&nbsp;6 <code>HT</code>:&nbsp;1460 <code>HU</code>:&nbsp;2 <code>ID</code>:&nbsp;131 <code>IL</code>:&nbsp;18 <code>IN</code>:&nbsp;473 <code>IQ</code>:&nbsp;177 <code>IR</code>:&nbsp;1 <code>IT</code>:&nbsp;1 <code>JM</code>:&nbsp;49 <code>JO</code>:&nbsp;141 <code>JP</code>:&nbsp;10 <code>KE</code>:&nbsp;609 <code>KG</code>:&nbsp;21 <code>KH</code>:&nbsp;142 <code>KI</code>:&nbsp;8 <code>KM</code>:&nbsp;4 <code>KN</code>:&nbsp;1 <code>KP</code>:&nbsp;13 <code>KR</code>:&nbsp;7 <code>KW</code>:&nbsp;1 <code>KZ</code>:&nbsp;9 <code>LA</code>:&nbsp;18 <code>LB</code>:&nbsp;153 <code>LC</code>:&nbsp;6 <code>LK</code>:&nbsp;86 <code>LR</code>:&nbsp;224 <code>LS</code>:&nbsp;16 <code>LT</code>:&nbsp;1 <code>LY</code>:&nbsp;16 <code>MA</code>:&nbsp;4 <code>MD</code>:&nbsp;22 <code>ME</code>:&nbsp;4 <code>MG</code>:&nbsp;39 <code>MH</code>:&nbsp;2 <code>MK</code>:&nbsp;6 <code>ML</code>:&nbsp;141 <code>MM</code>:&nbsp;207 <code>MN</code>:&nbsp;25 <code>MP</code>:&nbsp;1 <code>MR</code>:&nbsp;23 <code>MU</code>:&nbsp;2 <code>MV</code>:&nbsp;2 <code>MW</code>:&nbsp;133 <code>MX</code>:&nbsp;257 <code>MY</code>:&nbsp;10 <code>MZ</code>:&nbsp;121 <code>NA</code>:&nbsp;17 <code>NC</code>:&nbsp;1 <code>NE</code>:&nbsp;129 <code>NG</code>:&nbsp;306 <code>NI</code>:&nbsp;197 <code>NL</code>:&nbsp;2 <code>NP</code>:&nbsp;167 <code>NR</code>:&nbsp;2 <code>NU</code>:&nbsp;2 <code>NZ</code>:&nbsp;1 <code>OM</code>:&nbsp;1 <code>PA</code>:&nbsp;36 <code>PE</code>:&nbsp;118 <code>PG</code>:&nbsp;51 <code>PH</code>:&nbsp;248 <code>PK</code>:&nbsp;150 <code>PL</code>:&nbsp;1 <code>PR</code>:&nbsp;29 <code>PS</code>:&nbsp;70 <code>PW</code>:&nbsp;1 <code>PY</code>:&nbsp;25 <code>QA</code>:&nbsp;2 <code>RO</code>:&nbsp;19 <code>RS</code>:&nbsp;30 <code>RU</code>:&nbsp;19 <code>RW</code>:&nbsp;61 <code>SB</code>:&nbsp;13 <code>SC</code>:&nbsp;1 <code>SD</code>:&nbsp;108 <code>SG</code>:&nbsp;2 <code>SH</code>:&nbsp;1 <code>SI</code>:&nbsp;1 <code>SL</code>:&nbsp;206 <code>SN</code>:&nbsp;119 <code>SO</code>:&nbsp;239 <code>SR</code>:&nbsp;7 <code>SS</code>:&nbsp;328 <code>SV</code>:&nbsp;131 <code>SX</code>:&nbsp;2 <code>SY</code>:&nbsp;105 <code>SZ</code>:&nbsp;29 <code>TC</code>:&nbsp;1 <code>TD</code>:&nbsp;104 <code>TG</code>:&nbsp;16 <code>TH</code>:&nbsp;98 <code>TJ</code>:&nbsp;25 <code>TK</code>:&nbsp;2 <code>TL</code>:&nbsp;22 <code>TM</code>:&nbsp;1 <code>TN</code>:&nbsp;20 <code>TO</code>:&nbsp;6 <code>TR</code>:&nbsp;48 <code>TT</code>:&nbsp;2 <code>TV</code>:&nbsp;4 <code>TW</code>:&nbsp;1 <code>TZ</code>:&nbsp;200 <code>UA</code>:&nbsp;89 <code>UG</code>:&nbsp;368 <code>US</code>:&nbsp;648 <code>UY</code>:&nbsp;15 <code>UZ</code>:&nbsp;20 <code>VC</code>:&nbsp;2 <code>VE</code>:&nbsp;13 <code>VG</code>:&nbsp;3 <code>VI</code>:&nbsp;2 <code>VN</code>:&nbsp;89 <code>VU</code>:&nbsp;9 <code>WS</code>:&nbsp;5 <code>XK</code>:&nbsp;8 <code>YE</code>:&nbsp;76 <code>ZA</code>:&nbsp;45 <code>ZM</code>:&nbsp;123 <code>ZW</code>:&nbsp;106 ">188</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        <a href="javascript: return false;" class="popover-html" title="Values not on codelist for .//recipient-country/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code></code>:&nbsp;75 ">
+                            1
+                        </a>
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/reporting-org_@type.html">.//reporting-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//reporting-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>21</code>:&nbsp;12373 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/result_@type.html">.//result/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ResultType">ResultType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//result/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4388 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/result_indicator_@measure.html">.//result/indicator/@measure</a></td>
+                <td><a href="https://codelists.codeforiati.org/IndicatorMeasure">IndicatorMeasure</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//result/indicator/@measure" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4388 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/sector_@vocabulary.html">.//sector/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/SectorVocabulary">SectorVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//sector/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>99</code>:&nbsp;20269 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_transaction-type_@code.html">.//transaction/transaction-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/TransactionType">TransactionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/transaction-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;7146 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_value_@currency.html">.//transaction/value/@currency</a></td>
+                <td><a href="https://codelists.codeforiati.org/Currency">Currency</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/value/@currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>AFN</code>:&nbsp;11 <code>AUD</code>:&nbsp;3 <code>BIF</code>:&nbsp;2 <code>CAD</code>:&nbsp;23 <code>CHF</code>:&nbsp;4 <code>ETB</code>:&nbsp;14 <code>EUR</code>:&nbsp;69 <code>GBP</code>:&nbsp;30 <code>IQD</code>:&nbsp;1 <code>JOD</code>:&nbsp;2 <code>KES</code>:&nbsp;6 <code>LBP</code>:&nbsp;1 <code>SDG</code>:&nbsp;1 <code>SEK</code>:&nbsp;4 <code>SLL</code>:&nbsp;1 <code>SSP</code>:&nbsp;1 <code>TZS</code>:&nbsp;2 <code>UGX</code>:&nbsp;4 <code>USD</code>:&nbsp;6957 <code>XAF</code>:&nbsp;2 <code>XOF</code>:&nbsp;6 <code>YER</code>:&nbsp;1 ">22</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        <a href="javascript: return false;" class="popover-html" title="Values not on codelist for .//transaction/value/@currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>EURO</code>:&nbsp;1 ">
+                            1
+                        </a>
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@xml:lang.html">.//@xml:lang</a></td>
+                <td><a href="https://codelists.codeforiati.org/Language">Language</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@xml:lang" role="button" tabindex="0" data-trigger="focus" data-content="<code>en</code>:&nbsp;12373 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-scope_@code.html">.//activity-scope/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityScope">ActivityScope</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-scope/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;74 <code>4</code>:&nbsp;167 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+    
+    
+    
+    
+
+    <div class="panel panel-default" id="p_elements">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/ia_nam/elements.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Elements and Attributes Published</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Activities/Organisations</th>
+                <th>Files</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity.html">iati-activity</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@humanitarian.html">iati-activity/@humanitarian</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_@humanitarian.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@last-updated-datetime.html">iati-activity/@last-updated-datetime</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_@last-updated-datetime.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@linked-data-uri.html">iati-activity/@linked-data-uri</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_@linked-data-uri.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@xml:lang.html">iati-activity/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_@xml:lang.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date.html">iati-activity/activity-date</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_activity-date.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html">iati-activity/activity-date/@iso-date</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@type.html">iati-activity/activity-date/@type</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_activity-date_@type.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_narrative.html">iati-activity/activity-date/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_activity-date_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-scope.html">iati-activity/activity-scope</a></td>
+                <td>241</td>
+                <td><a href="../element/iati-activity_activity-scope.html#files_ia_nam">34</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-scope_@code.html">iati-activity/activity-scope/@code</a></td>
+                <td>241</td>
+                <td><a href="../element/iati-activity_activity-scope_@code.html#files_ia_nam">34</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status.html">iati-activity/activity-status</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_activity-status.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status_@code.html">iati-activity/activity-status/@code</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_activity-status_@code.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info.html">iati-activity/contact-info</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_contact-info.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_@type.html">iati-activity/contact-info/@type</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_contact-info_@type.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_email.html">iati-activity/contact-info/email</a></td>
+                <td>7802</td>
+                <td><a href="../element/iati-activity_contact-info_email.html#files_ia_nam">98</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_job-title.html">iati-activity/contact-info/job-title</a></td>
+                <td>7221</td>
+                <td><a href="../element/iati-activity_contact-info_job-title.html#files_ia_nam">95</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_job-title_narrative.html">iati-activity/contact-info/job-title/narrative</a></td>
+                <td>7221</td>
+                <td><a href="../element/iati-activity_contact-info_job-title_narrative.html#files_ia_nam">95</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation.html">iati-activity/contact-info/organisation</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_contact-info_organisation.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html">iati-activity/contact-info/organisation/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_person-name.html">iati-activity/contact-info/person-name</a></td>
+                <td>7604</td>
+                <td><a href="../element/iati-activity_contact-info_person-name.html#files_ia_nam">96</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_person-name_narrative.html">iati-activity/contact-info/person-name/narrative</a></td>
+                <td>7604</td>
+                <td><a href="../element/iati-activity_contact-info_person-name_narrative.html#files_ia_nam">96</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_website.html">iati-activity/contact-info/website</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_contact-info_website.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description.html">iati-activity/description</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_description.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_@type.html">iati-activity/description/@type</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_description_@type.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_narrative.html">iati-activity/description/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_description_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link.html">iati-activity/document-link</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_@format.html">iati-activity/document-link/@format</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link_@format.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_@url.html">iati-activity/document-link/@url</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link_@url.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_category.html">iati-activity/document-link/category</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link_category.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_category_@code.html">iati-activity/document-link/category/@code</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link_category_@code.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title.html">iati-activity/document-link/title</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link_title.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_document-link_title_narrative.html">iati-activity/document-link/title/narrative</a></td>
+                <td>4353</td>
+                <td><a href="../element/iati-activity_document-link_title_narrative.html#files_ia_nam">87</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_iati-identifier.html">iati-activity/iati-identifier</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_iati-identifier.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location.html">iati-activity/location</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_@ref.html">iati-activity/location/@ref</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_@ref.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative.html">iati-activity/location/administrative</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_administrative.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@code.html">iati-activity/location/administrative/@code</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_administrative_@code.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@level.html">iati-activity/location/administrative/@level</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_administrative_@level.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@vocabulary.html">iati-activity/location/administrative/@vocabulary</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_administrative_@vocabulary.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_description.html">iati-activity/location/description</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_description.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_description_narrative.html">iati-activity/location/description/narrative</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_description_narrative.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_exactness.html">iati-activity/location/exactness</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_exactness.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_exactness_@code.html">iati-activity/location/exactness/@code</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_exactness_@code.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_feature-designation.html">iati-activity/location/feature-designation</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_feature-designation.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_feature-designation_@code.html">iati-activity/location/feature-designation/@code</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_feature-designation_@code.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-class.html">iati-activity/location/location-class</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_location-class.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-class_@code.html">iati-activity/location/location-class/@code</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_location-class_@code.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-id.html">iati-activity/location/location-id</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_location-id.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-id_@code.html">iati-activity/location/location-id/@code</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_location-id_@code.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_location-id_@vocabulary.html">iati-activity/location/location-id/@vocabulary</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_location-id_@vocabulary.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_name.html">iati-activity/location/name</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_name.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_name_narrative.html">iati-activity/location/name/narrative</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_name_narrative.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_point.html">iati-activity/location/point</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_point.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_point_@srsName.html">iati-activity/location/point/@srsName</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_point_@srsName.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_point_pos.html">iati-activity/location/point/pos</a></td>
+                <td>7408</td>
+                <td><a href="../element/iati-activity_location_point_pos.html#files_ia_nam">99</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier.html">iati-activity/other-identifier</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_other-identifier.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_@ref.html">iati-activity/other-identifier/@ref</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_other-identifier_@ref.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_@type.html">iati-activity/other-identifier/@type</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_other-identifier_@type.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org.html">iati-activity/other-identifier/owner-org</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_@ref.html">iati-activity/other-identifier/owner-org/@ref</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_@ref.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative.html">iati-activity/other-identifier/owner-org/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org.html">iati-activity/participating-org</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_participating-org.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@ref.html">iati-activity/participating-org/@ref</a></td>
+                <td>12273</td>
+                <td><a href="../element/iati-activity_participating-org_@ref.html#files_ia_nam">103</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@role.html">iati-activity/participating-org/@role</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_participating-org_@role.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@type.html">iati-activity/participating-org/@type</a></td>
+                <td>12362</td>
+                <td><a href="../element/iati-activity_participating-org_@type.html#files_ia_nam">104</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_narrative.html">iati-activity/participating-org/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_participating-org_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country.html">iati-activity/recipient-country</a></td>
+                <td>12372</td>
+                <td><a href="../element/iati-activity_recipient-country.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@code.html">iati-activity/recipient-country/@code</a></td>
+                <td>12297</td>
+                <td><a href="../element/iati-activity_recipient-country_@code.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html">iati-activity/recipient-country/@percentage</a></td>
+                <td>12372</td>
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org.html">iati-activity/reporting-org</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_reporting-org.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@ref.html">iati-activity/reporting-org/@ref</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_reporting-org_@ref.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@secondary-reporter.html">iati-activity/reporting-org/@secondary-reporter</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_reporting-org_@secondary-reporter.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@type.html">iati-activity/reporting-org/@type</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_reporting-org_@type.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_narrative.html">iati-activity/reporting-org/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_reporting-org_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result.html">iati-activity/result</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_@aggregation-status.html">iati-activity/result/@aggregation-status</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_@aggregation-status.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_@type.html">iati-activity/result/@type</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_@type.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator.html">iati-activity/result/indicator</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_@measure.html">iati-activity/result/indicator/@measure</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_@measure.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period.html">iati-activity/result/indicator/period</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_period.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_actual.html">iati-activity/result/indicator/period/actual</a></td>
+                <td>445</td>
+                <td><a href="../element/iati-activity_result_indicator_period_actual.html#files_ia_nam">24</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_actual_@value.html">iati-activity/result/indicator/period/actual/@value</a></td>
+                <td>445</td>
+                <td><a href="../element/iati-activity_result_indicator_period_actual_@value.html#files_ia_nam">24</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_period-end.html">iati-activity/result/indicator/period/period-end</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_period_period-end.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_period-end_@iso-date.html">iati-activity/result/indicator/period/period-end/@iso-date</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_period_period-end_@iso-date.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_period-start.html">iati-activity/result/indicator/period/period-start</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_period_period-start.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_period-start_@iso-date.html">iati-activity/result/indicator/period/period-start/@iso-date</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_period_period-start_@iso-date.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_target.html">iati-activity/result/indicator/period/target</a></td>
+                <td>4304</td>
+                <td><a href="../element/iati-activity_result_indicator_period_target.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_period_target_@value.html">iati-activity/result/indicator/period/target/@value</a></td>
+                <td>4304</td>
+                <td><a href="../element/iati-activity_result_indicator_period_target_@value.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_title.html">iati-activity/result/indicator/title</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_title.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_indicator_title_narrative.html">iati-activity/result/indicator/title/narrative</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_indicator_title_narrative.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_title.html">iati-activity/result/title</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_title.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_result_title_narrative.html">iati-activity/result/title/narrative</a></td>
+                <td>4388</td>
+                <td><a href="../element/iati-activity_result_title_narrative.html#files_ia_nam">86</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector.html">iati-activity/sector</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_sector.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@code.html">iati-activity/sector/@code</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_sector_@code.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@percentage.html">iati-activity/sector/@percentage</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_sector_@percentage.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@vocabulary.html">iati-activity/sector/@vocabulary</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_sector_@vocabulary.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@vocabulary-uri.html">iati-activity/sector/@vocabulary-uri</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_sector_@vocabulary-uri.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_narrative.html">iati-activity/sector/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_sector_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title.html">iati-activity/title</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_title.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title_narrative.html">iati-activity/title/narrative</a></td>
+                <td>12373</td>
+                <td><a href="../element/iati-activity_title_narrative.html#files_ia_nam">105</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction.html">iati-activity/transaction</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description.html">iati-activity/transaction/description</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_description.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description_narrative.html">iati-activity/transaction/description/narrative</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_description_narrative.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org.html">iati-activity/transaction/provider-org</a></td>
+                <td>4313</td>
+                <td><a href="../element/iati-activity_transaction_provider-org.html#files_ia_nam">68</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@ref.html">iati-activity/transaction/provider-org/@ref</a></td>
+                <td>160</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@ref.html#files_ia_nam">31</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html">iati-activity/transaction/provider-org/narrative</a></td>
+                <td>4313</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html#files_ia_nam">68</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org.html">iati-activity/transaction/receiver-org</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_@ref.html">iati-activity/transaction/receiver-org/@ref</a></td>
+                <td>7136</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_@ref.html#files_ia_nam">78</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_narrative.html">iati-activity/transaction/receiver-org/narrative</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_narrative.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date.html">iati-activity/transaction/transaction-date</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html">iati-activity/transaction/transaction-date/@iso-date</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type.html">iati-activity/transaction/transaction-type</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html">iati-activity/transaction/transaction-type/@code</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value.html">iati-activity/transaction/value</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_value.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value_@currency.html">iati-activity/transaction/value/@currency</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_value_@currency.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html">iati-activity/transaction/value/@value-date</a></td>
+                <td>7146</td>
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html#files_ia_nam">79</a></td>
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+
+
+
+    
+  </div><!-- /.container -->
+
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">
+          <a href="https://github.com/codeforIATI/analytics/">Source Code</a>.
+
+          <a href="https://github.com/codeforIATI/analytics/issues?state=open">Report bugs, and request features using Github issues</a>.<br/>
+
+          Generated at <em>2022-07-23 09:38:25 UTC</em> from data downloaded at <em>2022-07-22 21:45:36 UTC</em>.<br/>
+
+          (NB This is the time the download task started. Any changes made after this time may not be reflected).<br />
+
+          For details on how often these updates are applied, see the <a href="/faq.html">Code for IATI Analytics FAQ</a>.
+    </div>
+</div>
+
+<script src="//codeforiati.org/sidebar/sidebar.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.widgets.min.js"></script>
+
+<script>$(function() { $("table.table:not(.exploring-data)").tablesorter(); });</script>
+<script>$(function() { $("table.exploring-data").tablesorter({textExtraction:{3: function(node,table,cellIndex) { return $(node).attr('data-bytes'); } }}); });</script>
+
+  
+    <script>
+$('.popover-html').popover({
+  html: true
+})
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <style>
+  em {
+    font-style: italic;
+  }
+  .big-number {
+    font-size: 100px;
+  }
+  .title-number {
+    font-weight: bold;
+    float: left;
+    width: 20%;
+  }
+  .title-text {
+    float: left;
+  }
+  .panel-heading {
+    clear: both;
+  }
+  .break {
+    word-break:break-all;
+  }
+  .panel-body h4, .panel-body h5 {
+    margin-top: 24px;
+  }
+  .panel-body h4:first-of-type, .panel-body h5:first-of-type {
+    margin-top: 10px;
+  }
+
+  .tablesorter-default .tablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-position: center left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .tablesorter-default thead .headerSortUp,
+  .tablesorter-default thead .tablesorter-headerSortUp,
+  .tablesorter-default thead .tablesorter-headerAsc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-default thead .headerSortDown,
+  .tablesorter-default thead .tablesorter-headerSortDown,
+  .tablesorter-default thead .tablesorter-headerDesc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+    border-bottom: #000 2px solid;
+  }
+  .tablesorter-header-inner {
+    margin-left:10px;
+  }
+  .tablesorter-headerRow {
+    background-color:white;
+  }
+  html,body {
+    height:100%;
+  }
+
+  #wrap {
+    min-height:100%;
+    height:auto;
+    margin:0 auto -60px;
+    padding:0 0 60px;
+  }
+
+  #footer {
+    background-color:#f5f5f5;
+    margin-top: 30px
+  }
+
+  .container .text-muted {
+    margin: 20px 0;
+  }
+
+  .navbar-default {
+     margin-bottom: 0px;
+  }
+
+  .navbar-brand {
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  a.popover-html:focus {
+    outline: none;
+  }
+  </style>
+  <link rel="icon" href="/favicon.ico">
+  <title>
+Code for IATI Analytics -  Publisher: CGIAR
+</title>
+
+  
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" data-c4i-toggle="sidebar" aria-controls="c4i-sidebar" aria-expanded="false" aria-label="Toggle Code for IATI sidebar"><img src="https://codeforiati.org/assets/img/logo.png" alt="Code for IATI" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+            <li ><a href="../index.html">Home</a></li>
+        
+            <li ><a href="../headlines.html">Headlines</a></li>
+        
+            <li ><a href="../data_quality.html">Data Quality</a></li>
+        
+            <li ><a href="../publishing_stats.html">Publishing Statistics</a></li>
+        
+            <li ><a href="../exploring_data.html">Exploring Data</a></li>
+        
+            <li ><a href="../faq.html">FAQ</a></li>
+        
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <div class="container">
+    
+      
+        <div class="page-header">
+          
+<a href="https://github.com/codeforIATI/IATI-Stats-public/tree/gh-pages/current/aggregated-publisher/cgiar/" style="float:right">(Publisher Stats JSON)</a>
+<h1>Publisher: CGIAR</h1>
+<p class="lead"></p>
+
+        </div>
+      
+
+      
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title" id="list_fail_validation">Table of Contents</h3></div>
+        <div class="panel-body">
+            <ul>
+                <li><a href="#h_headlines">Headlines</a>
+                <li><a href="#h_dataquality">Data Quality</a>
+                    <ul>
+                        
+                        
+                        
+                        
+                    </ul>
+                </li>
+                <li><a href="#h_financial">Financial</a></li>
+                <li><a href="#h_exploringdata">Exploring Data</a>
+                    <ul>
+                        <li><a href="#p_files">Files</a>
+                        <li><a href="#p_codelists">Codelist values</a>
+                        <li><a href="#p_elements">Elements and Attributes published</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <h2 id="h_headlines">Headlines</h2>
+
+    <div class="row">
+    <div class="col-md-6">
+    <div class="panel panel-default">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>On the Registry</td>
+                <td><a href="http://iatiregistry.org/publisher/cgiar">cgiar</a></td>
+            </tr>
+            <tr>
+                <td>Reporting Org on Registry</td>
+                <td>
+                    <code>XM-DAC-47015</code>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Reporting Org(s) in Data</td>
+                <td>
+                
+                <code>XM-DAC-47015</code>
+                
+                </td>
+            </tr><tr>
+                <td>Activity Files</td>
+                <td>1</td>
+            </tr><tr>
+                <td>Organisation Files</td>
+                <td>1</td>
+            </tr><tr>
+                <td>Total File Size</td>
+                <td>19.7 MB</td>
+            </tr><tr>
+                <td>Activities</td>
+                <td>4423</td>
+            </tr><tr>
+                <td>Unique Activities</td>
+                <td>4423</td>
+            </tr><tr>
+                <td>Organisations</td>
+                <td>16</td>
+            </tr><tr>
+                <td>Versions</td>
+                <td>
+                
+                <code>2.03</code>
+                
+                </td>
+            </tr><tr>
+                <td>Hierarchies</td>
+                <td>
+                
+                <code>null</code>
+                
+                </td>
+            </tr><tr>
+                <td>Licenses</td>
+                <td>
+                
+                <code><a href="../license/cc-by.html">cc-by</a></code>
+                
+                </td>
+            </tr><tr>
+                <td>Files failing validation</td>
+                <td>
+                0
+                </td>
+            </tr>
+        </body>
+    </table>
+    </div>
+    </div>
+    
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activities" class="title-number">4423</span>
+              <span class="title-text">Activities</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/activities.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_activities.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="activity-files" class="title-number">1</span>
+              <span class="title-text">Activity Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/activity_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_activity_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="organisation-files" class="title-number">1</span>
+              <span class="title-text">Organisation Files</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/organisation_files.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_organisation_files.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-per-version" class="title-number"></span>
+              <span class="title-text">Files per version</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/versions.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_versions.png" width="100%" />
+            
+            <img src="../publisher_imgs/cgiar_versions_legend.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="total-file-size" class="title-number">19.7 MB</span>
+              <span class="title-text">Total File Size</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/file_size.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_file_size.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-failing-validation" class="title-number"></span>
+              <span class="title-text">Files failing validation</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/validation.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_validation.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              
+              <span id="files-where-xml-is-not-well-formed" class="title-number">0</span>
+              <span class="title-text">Files where XML is not well-formed</span>
+            </h3>
+            
+            <a href="https://stats.codeforiati.org/gitaggregate-publisher-dated/cgiar/invalidxml.json" style="float:right">(J)</a>
+            
+            <div class="clearfix"></div>
+          </div>
+          <div class="panel-body">
+            <p></p>
+            <img src="../publisher_imgs/cgiar_invalidxml.png" width="100%" />
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="h_dataquality">Data Quality</h2>
+
+    
+
+    <div class="row">
+    
+
+    
+
+    
+
+    </div><!-- .row -->
+
+    
+
+    
+    <p>No issues were found.</p>
+    
+
+    <h2 id="h_financial">Financial</h2>
+
+    
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Budgets</h3>
+    </div>
+    <div class="panel-body">
+        <p>The below figures are calculated based on the data contained within the <code>&lt;budget&gt;</code> element for each reported activity. Original and revised elements are based on the value declared in the <code><a href="https://reference.codeforiati.org/activity-standard/iati-activities/iati-activity/budget/#iati-activities-iati-activity-budget-type">budget/@type</a></code> attribute. Where budgets fall across two calendar years, the month of the <code>&lt;period-end&gt;</code> date is used to determine annual groupings, with budgets for periods ending January-June added to the previous calendar year.</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Count (all)</th>
+                <th>Sum (all)</th>
+                <th>Count (Original)</th>
+                <th>Sum (Original)</th>
+                <th>Count (Revised)</th>
+                <th>Sum (Revised)</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>Total</td>
+                <td>1046</td>
+                <td>
+    
+    
+    
+    250234202.97109997 USD</br>
+    
+    
+    
+    </td>
+                <td>1046</td>
+                <td>
+    
+    
+    
+    250234202.97109997 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2016</td>
+                <td>16</td>
+                <td>
+    
+    
+    
+    1655648.1 USD</br>
+    
+    
+    
+    </td>
+                <td>16</td>
+                <td>
+    
+    
+    
+    1655648.1 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2017</td>
+                <td>36</td>
+                <td>
+    
+    
+    
+    4225826.2 USD</br>
+    
+    
+    
+    </td>
+                <td>36</td>
+                <td>
+    
+    
+    
+    4225826.2 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2018</td>
+                <td>135</td>
+                <td>
+    
+    
+    
+    12368932.078 USD</br>
+    
+    
+    
+    </td>
+                <td>135</td>
+                <td>
+    
+    
+    
+    12368932.078 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2019</td>
+                <td>244</td>
+                <td>
+    
+    
+    
+    52226205.3631 USD</br>
+    
+    
+    
+    </td>
+                <td>244</td>
+                <td>
+    
+    
+    
+    52226205.3631 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2020</td>
+                <td>227</td>
+                <td>
+    
+    
+    
+    77874901.41 USD</br>
+    
+    
+    
+    </td>
+                <td>227</td>
+                <td>
+    
+    
+    
+    77874901.41 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2021</td>
+                <td>275</td>
+                <td>
+    
+    
+    
+    54352286.79 USD</br>
+    
+    
+    
+    </td>
+                <td>275</td>
+                <td>
+    
+    
+    
+    54352286.79 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+            <tr>
+                <td>2022</td>
+                <td>113</td>
+                <td>
+    
+    
+    
+    47530403.03 USD</br>
+    
+    
+    
+    </td>
+                <td>113</td>
+                <td>
+    
+    
+    
+    47530403.03 USD</br>
+    
+    
+    
+    </td>
+                <td></td>
+                <td>
+    
+    </td>
+            </tr>
+        
+        </tbody>
+    </table>
+    </div>
+
+
+    <h2 id="h_exploringdata">Exploring Data</h2>
+
+    <div class="panel panel-default" id="p_files">
+    <div class="panel-heading">
+        <h3 class="panel-title">Files</h3>
+    </div>
+    <table class="table table-striped exploring-data">
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Activities <a href="https://stats.codeforiati.org/current/inverted-file-publisher/cgiar/activities.json">(J)</a></th>
+                <th>Organisations <a href="https://stats.codeforiati.org/current/inverted-file-publisher/cgiar/organisations.json">(J)</a></th>
+                <th>File Size <a href="https://stats.codeforiati.org/current/inverted-file-publisher/cgiar/file_size.json">(J)</a></th>
+                <th>Version <a href="https://stats.codeforiati.org/current/inverted-file-publisher/cgiar/versions.json">(J)</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/cgiar-activities-grants">cgiar-activities-grants</a></td>
+                <td>4423</td>
+                <td>0</td>
+                <td data-bytes="19680136">19.7 MB</td>
+                <td>2.03</td>
+            </tr>
+            
+            <tr>
+                <td class="break"><a href="http://iatiregistry.org/dataset/cgiar-org">cgiar-org</a></td>
+                <td>0</td>
+                <td>16</td>
+                <td data-bytes="50014">50.0 kB</td>
+                <td>2.03</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    
+    
+    <div class="panel panel-default" id="p_codelists">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/cgiar/codelist_values.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Codelist Values (version 2.xx)</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Codelist</th>
+                <th>Values on Codelist</th>
+                <th>Values not on Codelist</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@default-currency.html">.//@default-currency</a></td>
+                <td><a href="https://codelists.codeforiati.org/Currency">Currency</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@default-currency" role="button" tabindex="0" data-trigger="focus" data-content="<code>USD</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-date_@type.html">.//activity-date/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityDateType">ActivityDateType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-date/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4423 <code>2</code>:&nbsp;4422 <code>3</code>:&nbsp;4423 <code>4</code>:&nbsp;3253 ">4</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/activity-status_@code.html">.//activity-status/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/ActivityStatus">ActivityStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//activity-status/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;1170 <code>3</code>:&nbsp;3253 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/budget_@status.html">.//budget/@status</a></td>
+                <td><a href="https://codelists.codeforiati.org/BudgetStatus">BudgetStatus</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//budget/@status" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/budget_@type.html">.//budget/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/BudgetType">BudgetType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//budget/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/contact-info_@type.html">.//contact-info/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/ContactType">ContactType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//contact-info/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4423 <code>2</code>:&nbsp;4423 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-aid-type@vocabulary1ornot@vocabulary_@code.html">.//default-aid-type[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/AidType">AidType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-aid-type[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>B04</code>:&nbsp;192 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-aid-type@vocabulary2_@code.html">.//default-aid-type[@vocabulary = &#39;2&#39;]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/EarmarkingCategory">EarmarkingCategory</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-aid-type[@vocabulary = &#39;2&#39;]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;192 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/default-aid-type_@vocabulary.html">.//default-aid-type/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/AidTypeVocabulary">AidTypeVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//default-aid-type/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;192 <code>2</code>:&nbsp;192 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/description_@type.html">.//description/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/DescriptionType">DescriptionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//description/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_administrative_@vocabulary.html">.//location/administrative/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/GeographicVocabulary">GeographicVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/administrative/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>A4</code>:&nbsp;13624 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/location_administrative@vocabularyA4_@code.html">.//location/administrative[@vocabulary = &#39;A4&#39;]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Country">Country</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//location/administrative[@vocabulary = &#39;A4&#39;]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>AE</code>:&nbsp;7 <code>AF</code>:&nbsp;94 <code>AL</code>:&nbsp;6 <code>AM</code>:&nbsp;3 <code>AO</code>:&nbsp;85 <code>AR</code>:&nbsp;12 <code>AS</code>:&nbsp;1 <code>AT</code>:&nbsp;6 <code>AU</code>:&nbsp;118 <code>AZ</code>:&nbsp;5 <code>BD</code>:&nbsp;372 <code>BE</code>:&nbsp;49 <code>BF</code>:&nbsp;169 <code>BG</code>:&nbsp;7 <code>BH</code>:&nbsp;8 <code>BI</code>:&nbsp;83 <code>BJ</code>:&nbsp;152 <code>BN</code>:&nbsp;4 <code>BO</code>:&nbsp;69 <code>BR</code>:&nbsp;125 <code>BT</code>:&nbsp;79 <code>BW</code>:&nbsp;91 <code>BY</code>:&nbsp;5 <code>BZ</code>:&nbsp;1 <code>CA</code>:&nbsp;43 <code>CD</code>:&nbsp;110 <code>CF</code>:&nbsp;13 <code>CG</code>:&nbsp;42 <code>CH</code>:&nbsp;11 <code>CI</code>:&nbsp;190 <code>CL</code>:&nbsp;7 <code>CM</code>:&nbsp;142 <code>CN</code>:&nbsp;183 <code>CO</code>:&nbsp;383 <code>CR</code>:&nbsp;61 <code>CU</code>:&nbsp;4 <code>CV</code>:&nbsp;6 <code>CY</code>:&nbsp;5 <code>CZ</code>:&nbsp;3 <code>DE</code>:&nbsp;103 <code>DJ</code>:&nbsp;3 <code>DK</code>:&nbsp;10 <code>DO</code>:&nbsp;16 <code>DZ</code>:&nbsp;53 <code>EC</code>:&nbsp;40 <code>EE</code>:&nbsp;5 <code>EG</code>:&nbsp;107 <code>EH</code>:&nbsp;36 <code>ER</code>:&nbsp;39 <code>ES</code>:&nbsp;11 <code>ET</code>:&nbsp;627 <code>FI</code>:&nbsp;10 <code>FJ</code>:&nbsp;4 <code>FK</code>:&nbsp;1 <code>FM</code>:&nbsp;35 <code>FR</code>:&nbsp;119 <code>GA</code>:&nbsp;51 <code>GB</code>:&nbsp;131 <code>GD</code>:&nbsp;3 <code>GE</code>:&nbsp;9 <code>GF</code>:&nbsp;2 <code>GH</code>:&nbsp;321 <code>GM</code>:&nbsp;45 <code>GN</code>:&nbsp;47 <code>GQ</code>:&nbsp;38 <code>GR</code>:&nbsp;7 <code>GT</code>:&nbsp;125 <code>GW</code>:&nbsp;38 <code>GY</code>:&nbsp;7 <code>HK</code>:&nbsp;43 <code>HN</code>:&nbsp;129 <code>HR</code>:&nbsp;6 <code>HT</code>:&nbsp;42 <code>HU</code>:&nbsp;7 <code>ID</code>:&nbsp;225 <code>IE</code>:&nbsp;43 <code>IL</code>:&nbsp;1 <code>IN</code>:&nbsp;717 <code>IQ</code>:&nbsp;8 <code>IR</code>:&nbsp;41 <code>IS</code>:&nbsp;5 <code>IT</code>:&nbsp;90 <code>JM</code>:&nbsp;2 <code>JO</code>:&nbsp;41 <code>JP</code>:&nbsp;85 <code>KE</code>:&nbsp;732 <code>KG</code>:&nbsp;8 <code>KH</code>:&nbsp;155 <code>KI</code>:&nbsp;1 <code>KM</code>:&nbsp;5 <code>KP</code>:&nbsp;1 <code>KR</code>:&nbsp;51 <code>KW</code>:&nbsp;7 <code>KZ</code>:&nbsp;8 <code>LA</code>:&nbsp;89 <code>LB</code>:&nbsp;53 <code>LK</code>:&nbsp;110 <code>LR</code>:&nbsp;52 <code>LS</code>:&nbsp;40 <code>LT</code>:&nbsp;6 <code>LU</code>:&nbsp;2 <code>LV</code>:&nbsp;5 <code>LY</code>:&nbsp;2 <code>MA</code>:&nbsp;113 <code>MD</code>:&nbsp;3 <code>ME</code>:&nbsp;5 <code>MG</code>:&nbsp;109 <code>MK</code>:&nbsp;1 <code>ML</code>:&nbsp;214 <code>MM</code>:&nbsp;186 <code>MN</code>:&nbsp;3 <code>MR</code>:&nbsp;47 <code>MU</code>:&nbsp;40 <code>MV</code>:&nbsp;35 <code>MW</code>:&nbsp;240 <code>MX</code>:&nbsp;161 <code>MY</code>:&nbsp;69 <code>MZ</code>:&nbsp;180 <code>NA</code>:&nbsp;79 <code>NE</code>:&nbsp;166 <code>NG</code>:&nbsp;454 <code>NI</code>:&nbsp;95 <code>NL</code>:&nbsp;49 <code>NO</code>:&nbsp;48 <code>NP</code>:&nbsp;235 <code>OM</code>:&nbsp;9 <code>PA</code>:&nbsp;16 <code>PE</code>:&nbsp;169 <code>PG</code>:&nbsp;20 <code>PH</code>:&nbsp;274 <code>PK</code>:&nbsp;140 <code>PL</code>:&nbsp;2 <code>PS</code>:&nbsp;9 <code>PT</code>:&nbsp;5 <code>PY</code>:&nbsp;3 <code>QA</code>:&nbsp;7 <code>RE</code>:&nbsp;36 <code>RO</code>:&nbsp;8 <code>RS</code>:&nbsp;8 <code>RU</code>:&nbsp;7 <code>RW</code>:&nbsp;163 <code>SA</code>:&nbsp;9 <code>SB</code>:&nbsp;25 <code>SC</code>:&nbsp;38 <code>SD</code>:&nbsp;78 <code>SE</code>:&nbsp;13 <code>SG</code>:&nbsp;43 <code>SH</code>:&nbsp;1 <code>SI</code>:&nbsp;6 <code>SK</code>:&nbsp;1 <code>SL</code>:&nbsp;57 <code>SN</code>:&nbsp;200 <code>SO</code>:&nbsp;54 <code>SR</code>:&nbsp;2 <code>SS</code>:&nbsp;9 <code>ST</code>:&nbsp;43 <code>SV</code>:&nbsp;65 <code>SY</code>:&nbsp;20 <code>SZ</code>:&nbsp;40 <code>TD</code>:&nbsp;62 <code>TG</code>:&nbsp;53 <code>TH</code>:&nbsp;132 <code>TJ</code>:&nbsp;13 <code>TL</code>:&nbsp;29 <code>TM</code>:&nbsp;5 <code>TN</code>:&nbsp;82 <code>TR</code>:&nbsp;67 <code>TT</code>:&nbsp;9 <code>TW</code>:&nbsp;78 <code>UA</code>:&nbsp;2 <code>UG</code>:&nbsp;351 <code>US</code>:&nbsp;138 <code>UY</code>:&nbsp;3 <code>UZ</code>:&nbsp;41 <code>VC</code>:&nbsp;1 <code>VE</code>:&nbsp;14 <code>VN</code>:&nbsp;292 <code>VU</code>:&nbsp;4 <code>WS</code>:&nbsp;1 <code>YE</code>:&nbsp;13 <code>ZA</code>:&nbsp;171 <code>ZM</code>:&nbsp;184 <code>ZW</code>:&nbsp;158 ">183</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/other-identifier_@type.html">.//other-identifier/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OtherIdentifierType">OtherIdentifierType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//other-identifier/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>A1</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@role.html">.//participating-org/@role</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationRole">OrganisationRole</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@role" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;4439 <code>4</code>:&nbsp;4423 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/participating-org_@type.html">.//participating-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//participating-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;1617 <code>21</code>:&nbsp;970 <code>40</code>:&nbsp;192 <code>60</code>:&nbsp;303 <code>70</code>:&nbsp;228 <code>80</code>:&nbsp;5100 <code>90</code>:&nbsp;111 ">7</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-country_@code.html">.//recipient-country/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Country">Country</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-country/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>AE</code>:&nbsp;7 <code>AF</code>:&nbsp;94 <code>AL</code>:&nbsp;6 <code>AM</code>:&nbsp;3 <code>AO</code>:&nbsp;85 <code>AR</code>:&nbsp;12 <code>AS</code>:&nbsp;1 <code>AT</code>:&nbsp;6 <code>AU</code>:&nbsp;118 <code>AZ</code>:&nbsp;5 <code>BD</code>:&nbsp;372 <code>BE</code>:&nbsp;49 <code>BF</code>:&nbsp;169 <code>BG</code>:&nbsp;7 <code>BH</code>:&nbsp;8 <code>BI</code>:&nbsp;83 <code>BJ</code>:&nbsp;152 <code>BN</code>:&nbsp;4 <code>BO</code>:&nbsp;69 <code>BR</code>:&nbsp;125 <code>BT</code>:&nbsp;79 <code>BW</code>:&nbsp;91 <code>BY</code>:&nbsp;5 <code>BZ</code>:&nbsp;1 <code>CA</code>:&nbsp;43 <code>CD</code>:&nbsp;110 <code>CF</code>:&nbsp;13 <code>CG</code>:&nbsp;42 <code>CH</code>:&nbsp;11 <code>CI</code>:&nbsp;190 <code>CL</code>:&nbsp;7 <code>CM</code>:&nbsp;142 <code>CN</code>:&nbsp;183 <code>CO</code>:&nbsp;383 <code>CR</code>:&nbsp;61 <code>CU</code>:&nbsp;4 <code>CV</code>:&nbsp;6 <code>CY</code>:&nbsp;5 <code>CZ</code>:&nbsp;3 <code>DE</code>:&nbsp;103 <code>DJ</code>:&nbsp;3 <code>DK</code>:&nbsp;10 <code>DO</code>:&nbsp;16 <code>DZ</code>:&nbsp;53 <code>EC</code>:&nbsp;40 <code>EE</code>:&nbsp;5 <code>EG</code>:&nbsp;107 <code>EH</code>:&nbsp;36 <code>ER</code>:&nbsp;39 <code>ES</code>:&nbsp;11 <code>ET</code>:&nbsp;627 <code>FI</code>:&nbsp;10 <code>FJ</code>:&nbsp;4 <code>FK</code>:&nbsp;1 <code>FM</code>:&nbsp;35 <code>FR</code>:&nbsp;119 <code>GA</code>:&nbsp;51 <code>GB</code>:&nbsp;131 <code>GD</code>:&nbsp;3 <code>GE</code>:&nbsp;9 <code>GF</code>:&nbsp;2 <code>GH</code>:&nbsp;321 <code>GM</code>:&nbsp;45 <code>GN</code>:&nbsp;47 <code>GQ</code>:&nbsp;38 <code>GR</code>:&nbsp;7 <code>GT</code>:&nbsp;125 <code>GW</code>:&nbsp;38 <code>GY</code>:&nbsp;7 <code>HK</code>:&nbsp;43 <code>HN</code>:&nbsp;129 <code>HR</code>:&nbsp;6 <code>HT</code>:&nbsp;42 <code>HU</code>:&nbsp;7 <code>ID</code>:&nbsp;225 <code>IE</code>:&nbsp;43 <code>IL</code>:&nbsp;1 <code>IN</code>:&nbsp;717 <code>IQ</code>:&nbsp;8 <code>IR</code>:&nbsp;41 <code>IS</code>:&nbsp;5 <code>IT</code>:&nbsp;90 <code>JM</code>:&nbsp;2 <code>JO</code>:&nbsp;41 <code>JP</code>:&nbsp;85 <code>KE</code>:&nbsp;732 <code>KG</code>:&nbsp;8 <code>KH</code>:&nbsp;155 <code>KI</code>:&nbsp;1 <code>KM</code>:&nbsp;5 <code>KP</code>:&nbsp;1 <code>KR</code>:&nbsp;51 <code>KW</code>:&nbsp;7 <code>KZ</code>:&nbsp;8 <code>LA</code>:&nbsp;89 <code>LB</code>:&nbsp;53 <code>LK</code>:&nbsp;110 <code>LR</code>:&nbsp;52 <code>LS</code>:&nbsp;40 <code>LT</code>:&nbsp;6 <code>LU</code>:&nbsp;2 <code>LV</code>:&nbsp;5 <code>LY</code>:&nbsp;2 <code>MA</code>:&nbsp;113 <code>MD</code>:&nbsp;3 <code>ME</code>:&nbsp;5 <code>MG</code>:&nbsp;109 <code>MK</code>:&nbsp;1 <code>ML</code>:&nbsp;214 <code>MM</code>:&nbsp;186 <code>MN</code>:&nbsp;3 <code>MR</code>:&nbsp;47 <code>MU</code>:&nbsp;40 <code>MV</code>:&nbsp;35 <code>MW</code>:&nbsp;240 <code>MX</code>:&nbsp;161 <code>MY</code>:&nbsp;69 <code>MZ</code>:&nbsp;180 <code>NA</code>:&nbsp;79 <code>NE</code>:&nbsp;166 <code>NG</code>:&nbsp;454 <code>NI</code>:&nbsp;95 <code>NL</code>:&nbsp;49 <code>NO</code>:&nbsp;48 <code>NP</code>:&nbsp;235 <code>OM</code>:&nbsp;9 <code>PA</code>:&nbsp;16 <code>PE</code>:&nbsp;169 <code>PG</code>:&nbsp;20 <code>PH</code>:&nbsp;274 <code>PK</code>:&nbsp;140 <code>PL</code>:&nbsp;2 <code>PS</code>:&nbsp;9 <code>PT</code>:&nbsp;5 <code>PY</code>:&nbsp;3 <code>QA</code>:&nbsp;7 <code>RE</code>:&nbsp;36 <code>RO</code>:&nbsp;8 <code>RS</code>:&nbsp;8 <code>RU</code>:&nbsp;7 <code>RW</code>:&nbsp;163 <code>SA</code>:&nbsp;9 <code>SB</code>:&nbsp;25 <code>SC</code>:&nbsp;38 <code>SD</code>:&nbsp;78 <code>SE</code>:&nbsp;13 <code>SG</code>:&nbsp;43 <code>SH</code>:&nbsp;1 <code>SI</code>:&nbsp;6 <code>SK</code>:&nbsp;1 <code>SL</code>:&nbsp;57 <code>SN</code>:&nbsp;200 <code>SO</code>:&nbsp;54 <code>SR</code>:&nbsp;2 <code>SS</code>:&nbsp;9 <code>ST</code>:&nbsp;43 <code>SV</code>:&nbsp;65 <code>SY</code>:&nbsp;20 <code>SZ</code>:&nbsp;40 <code>TD</code>:&nbsp;62 <code>TG</code>:&nbsp;53 <code>TH</code>:&nbsp;132 <code>TJ</code>:&nbsp;13 <code>TL</code>:&nbsp;29 <code>TM</code>:&nbsp;5 <code>TN</code>:&nbsp;82 <code>TR</code>:&nbsp;67 <code>TT</code>:&nbsp;9 <code>TW</code>:&nbsp;78 <code>UA</code>:&nbsp;2 <code>UG</code>:&nbsp;351 <code>US</code>:&nbsp;138 <code>UY</code>:&nbsp;3 <code>UZ</code>:&nbsp;41 <code>VC</code>:&nbsp;1 <code>VE</code>:&nbsp;14 <code>VN</code>:&nbsp;292 <code>VU</code>:&nbsp;4 <code>WS</code>:&nbsp;1 <code>YE</code>:&nbsp;13 <code>ZA</code>:&nbsp;171 <code>ZM</code>:&nbsp;184 <code>ZW</code>:&nbsp;158 ">183</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/recipient-region@vocabulary1ornot@vocabulary_@code.html">.//recipient-region[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Region">Region</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//recipient-region[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>998</code>:&nbsp;340 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/reporting-org_@type.html">.//reporting-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//reporting-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>80</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/sector@vocabulary1ornot@vocabulary_@code.html">.//sector[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/Sector">Sector</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//sector[@vocabulary = &#39;1&#39; or not(@vocabulary)]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>31182</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/tag@vocabulary2_@code.html">.//tag[@vocabulary = &#39;2&#39;]/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/UNSDG-Goals">UNSDG-Goals</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//tag[@vocabulary = &#39;2&#39;]/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>1</code>:&nbsp;873 <code>10</code>:&nbsp;152 <code>11</code>:&nbsp;44 <code>12</code>:&nbsp;430 <code>13</code>:&nbsp;823 <code>14</code>:&nbsp;71 <code>15</code>:&nbsp;528 <code>16</code>:&nbsp;60 <code>17</code>:&nbsp;382 <code>2</code>:&nbsp;2681 <code>3</code>:&nbsp;514 <code>4</code>:&nbsp;62 <code>5</code>:&nbsp;285 <code>6</code>:&nbsp;204 <code>7</code>:&nbsp;44 <code>8</code>:&nbsp;221 <code>9</code>:&nbsp;125 ">17</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/tag_@vocabulary.html">.//tag/@vocabulary</a></td>
+                <td><a href="https://codelists.codeforiati.org/TagVocabulary">TagVocabulary</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//tag/@vocabulary" role="button" tabindex="0" data-trigger="focus" data-content="<code>2</code>:&nbsp;7499 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_provider-org_@type.html">.//transaction/provider-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/provider-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>10</code>:&nbsp;1617 <code>21</code>:&nbsp;970 <code>40</code>:&nbsp;192 <code>60</code>:&nbsp;303 <code>70</code>:&nbsp;228 <code>80</code>:&nbsp;5116 <code>90</code>:&nbsp;111 ">7</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_receiver-org_@type.html">.//transaction/receiver-org/@type</a></td>
+                <td><a href="https://codelists.codeforiati.org/OrganisationType">OrganisationType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/receiver-org/@type" role="button" tabindex="0" data-trigger="focus" data-content="<code>80</code>:&nbsp;8878 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/transaction_transaction-type_@code.html">.//transaction/transaction-type/@code</a></td>
+                <td><a href="https://codelists.codeforiati.org/TransactionType">TransactionType</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//transaction/transaction-type/@code" role="button" tabindex="0" data-trigger="focus" data-content="<code>11</code>:&nbsp;4439 <code>2</code>:&nbsp;4439 ">2</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../codelist/2/@xml:lang.html">.//@xml:lang</a></td>
+                <td><a href="https://codelists.codeforiati.org/Language">Language</a></td>
+                
+                <td>
+                    <a href="javascript: return false;" class="popover-html" title="Values on codelist for .//@xml:lang" role="button" tabindex="0" data-trigger="focus" data-content="<code>en</code>:&nbsp;4423 ">1</a>
+                    
+                </td>
+                
+                
+                <td>
+                    
+                        0
+                    
+                </td>
+                
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+    
+    
+    
+    
+
+    <div class="panel panel-default" id="p_elements">
+    <table class="table table-striped">
+    <div class="panel-heading">
+        <a href="https://stats.codeforiati.org/current/aggregated-publisher/cgiar/elements.json" style="float:right">(J)</a>
+        <h3 class="panel-title">Elements and Attributes Published</h3>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Element/Attribute</th>
+                <th>Activities/Organisations</th>
+                <th>Files</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity.html">iati-activity</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@default-currency.html">iati-activity/@default-currency</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_@default-currency.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@last-updated-datetime.html">iati-activity/@last-updated-datetime</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_@last-updated-datetime.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_@xml:lang.html">iati-activity/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_@xml:lang.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date.html">iati-activity/activity-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_activity-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html">iati-activity/activity-date/@iso-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_activity-date_@iso-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-date_@type.html">iati-activity/activity-date/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_activity-date_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status.html">iati-activity/activity-status</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_activity-status.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_activity-status_@code.html">iati-activity/activity-status/@code</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_activity-status_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget.html">iati-activity/budget</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_@status.html">iati-activity/budget/@status</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_@status.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_@type.html">iati-activity/budget/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-end.html">iati-activity/budget/period-end</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_period-end.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-end_@iso-date.html">iati-activity/budget/period-end/@iso-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_period-end_@iso-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-start.html">iati-activity/budget/period-start</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_period-start.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_period-start_@iso-date.html">iati-activity/budget/period-start/@iso-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_period-start_@iso-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value.html">iati-activity/budget/value</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_value.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_budget_value_@value-date.html">iati-activity/budget/value/@value-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_budget_value_@value-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_capital-spend.html">iati-activity/capital-spend</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_capital-spend.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_capital-spend_@percentage.html">iati-activity/capital-spend/@percentage</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_capital-spend_@percentage.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info.html">iati-activity/contact-info</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_@type.html">iati-activity/contact-info/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_email.html">iati-activity/contact-info/email</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_email.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_mailing-address.html">iati-activity/contact-info/mailing-address</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_mailing-address.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_mailing-address_narrative.html">iati-activity/contact-info/mailing-address/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_mailing-address_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation.html">iati-activity/contact-info/organisation</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_organisation.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html">iati-activity/contact-info/organisation/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_organisation_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_telephone.html">iati-activity/contact-info/telephone</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_telephone.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_contact-info_website.html">iati-activity/contact-info/website</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_contact-info_website.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type.html">iati-activity/default-aid-type</a></td>
+                <td>192</td>
+                <td><a href="../element/iati-activity_default-aid-type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type_@code.html">iati-activity/default-aid-type/@code</a></td>
+                <td>192</td>
+                <td><a href="../element/iati-activity_default-aid-type_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_default-aid-type_@vocabulary.html">iati-activity/default-aid-type/@vocabulary</a></td>
+                <td>192</td>
+                <td><a href="../element/iati-activity_default-aid-type_@vocabulary.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description.html">iati-activity/description</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_description.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_@type.html">iati-activity/description/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_description_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_description_narrative.html">iati-activity/description/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_description_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_iati-identifier.html">iati-activity/iati-identifier</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_iati-identifier.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location.html">iati-activity/location</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_location.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative.html">iati-activity/location/administrative</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_location_administrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@code.html">iati-activity/location/administrative/@code</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_location_administrative_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_administrative_@vocabulary.html">iati-activity/location/administrative/@vocabulary</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_location_administrative_@vocabulary.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_name.html">iati-activity/location/name</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_location_name.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_location_name_narrative.html">iati-activity/location/name/narrative</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_location_name_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier.html">iati-activity/other-identifier</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_other-identifier.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_@ref.html">iati-activity/other-identifier/@ref</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_other-identifier_@ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_@type.html">iati-activity/other-identifier/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_other-identifier_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org.html">iati-activity/other-identifier/owner-org</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_@ref.html">iati-activity/other-identifier/owner-org/@ref</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_@ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative.html">iati-activity/other-identifier/owner-org/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_other-identifier_owner-org_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org.html">iati-activity/participating-org</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_participating-org.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@activity-id.html">iati-activity/participating-org/@activity-id</a></td>
+                <td>8</td>
+                <td><a href="../element/iati-activity_participating-org_@activity-id.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@ref.html">iati-activity/participating-org/@ref</a></td>
+                <td>1601</td>
+                <td><a href="../element/iati-activity_participating-org_@ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@role.html">iati-activity/participating-org/@role</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_participating-org_@role.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@type.html">iati-activity/participating-org/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_participating-org_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@centre-ref.html">iati-activity/participating-org/@{https://www.cgiar.org/dashboards/}centre-ref</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_participating-org_@centre-ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_@id.html">iati-activity/participating-org/@{https://www.cgiar.org/dashboards/}id</a></td>
+                <td>4082</td>
+                <td><a href="../element/iati-activity_participating-org_@id.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_participating-org_narrative.html">iati-activity/participating-org/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_participating-org_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country.html">iati-activity/recipient-country</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_recipient-country.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@code.html">iati-activity/recipient-country/@code</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_recipient-country_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html">iati-activity/recipient-country/@percentage</a></td>
+                <td>4325</td>
+                <td><a href="../element/iati-activity_recipient-country_@percentage.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region.html">iati-activity/recipient-region</a></td>
+                <td>340</td>
+                <td><a href="../element/iati-activity_recipient-region.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@code.html">iati-activity/recipient-region/@code</a></td>
+                <td>340</td>
+                <td><a href="../element/iati-activity_recipient-region_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_recipient-region_@percentage.html">iati-activity/recipient-region/@percentage</a></td>
+                <td>340</td>
+                <td><a href="../element/iati-activity_recipient-region_@percentage.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org.html">iati-activity/reporting-org</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_reporting-org.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@ref.html">iati-activity/reporting-org/@ref</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_reporting-org_@ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_@type.html">iati-activity/reporting-org/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_reporting-org_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_reporting-org_narrative.html">iati-activity/reporting-org/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_reporting-org_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector.html">iati-activity/sector</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_sector.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_sector_@code.html">iati-activity/sector/@code</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_sector_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_tag.html">iati-activity/tag</a></td>
+                <td>4005</td>
+                <td><a href="../element/iati-activity_tag.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_tag_@code.html">iati-activity/tag/@code</a></td>
+                <td>4005</td>
+                <td><a href="../element/iati-activity_tag_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_tag_@vocabulary.html">iati-activity/tag/@vocabulary</a></td>
+                <td>4005</td>
+                <td><a href="../element/iati-activity_tag_@vocabulary.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title.html">iati-activity/title</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_title.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_title_narrative.html">iati-activity/title/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_title_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction.html">iati-activity/transaction</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description.html">iati-activity/transaction/description</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_description.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_description_narrative.html">iati-activity/transaction/description/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_description_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org.html">iati-activity/transaction/provider-org</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_provider-org.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@provider-activity-id.html">iati-activity/transaction/provider-org/@provider-activity-id</a></td>
+                <td>8</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@provider-activity-id.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@ref.html">iati-activity/transaction/provider-org/@ref</a></td>
+                <td>1601</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@type.html">iati-activity/transaction/provider-org/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@centre-ref.html">iati-activity/transaction/provider-org/@{https://www.cgiar.org/dashboards/}centre-ref</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@centre-ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_@id.html">iati-activity/transaction/provider-org/@{https://www.cgiar.org/dashboards/}id</a></td>
+                <td>4082</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_@id.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html">iati-activity/transaction/provider-org/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_provider-org_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org.html">iati-activity/transaction/receiver-org</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_@type.html">iati-activity/transaction/receiver-org/@type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_@centre-ref.html">iati-activity/transaction/receiver-org/@{https://www.cgiar.org/dashboards/}centre-ref</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_@centre-ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_receiver-org_narrative.html">iati-activity/transaction/receiver-org/narrative</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_receiver-org_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date.html">iati-activity/transaction/transaction-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html">iati-activity/transaction/transaction-date/@iso-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_transaction-date_@iso-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type.html">iati-activity/transaction/transaction-type</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html">iati-activity/transaction/transaction-type/@code</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_transaction-type_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value.html">iati-activity/transaction/value</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_value.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html">iati-activity/transaction/value/@value-date</a></td>
+                <td>4423</td>
+                <td><a href="../element/iati-activity_transaction_value_@value-date.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation.html">iati-organisation</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_@default-currency.html">iati-organisation/@default-currency</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_@default-currency.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_@last-updated-datetime.html">iati-organisation/@last-updated-datetime</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_@last-updated-datetime.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_@xml:lang.html">iati-organisation/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_@xml:lang.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link.html">iati-organisation/document-link</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_@format.html">iati-organisation/document-link/@format</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_@format.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_@url.html">iati-organisation/document-link/@url</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_@url.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_category.html">iati-organisation/document-link/category</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_category.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_category_@code.html">iati-organisation/document-link/category/@code</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_category_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_language.html">iati-organisation/document-link/language</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_language.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_language_@code.html">iati-organisation/document-link/language/@code</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_language_@code.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_title.html">iati-organisation/document-link/title</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_title.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_title_narrative.html">iati-organisation/document-link/title/narrative</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_title_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_document-link_title_narrative_@xml:lang.html">iati-organisation/document-link/title/narrative/@{http://www.w3.org/XML/1998/namespace}lang</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_document-link_title_narrative_@xml:lang.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_name.html">iati-organisation/name</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_name.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_name_narrative.html">iati-organisation/name/narrative</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_name_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_organisation-identifier.html">iati-organisation/organisation-identifier</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_organisation-identifier.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org.html">iati-organisation/reporting-org</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_reporting-org.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_@ref.html">iati-organisation/reporting-org/@ref</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_reporting-org_@ref.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_@type.html">iati-organisation/reporting-org/@type</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_reporting-org_@type.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            <tr>
+            
+                <td><a href="../element/iati-organisation_reporting-org_narrative.html">iati-organisation/reporting-org/narrative</a></td>
+                <td>16</td>
+                <td><a href="../element/iati-organisation_reporting-org_narrative.html#files_cgiar">1</a></td>
+            
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    </div>
+
+
+
+    
+  </div><!-- /.container -->
+
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">
+          <a href="https://github.com/codeforIATI/analytics/">Source Code</a>.
+
+          <a href="https://github.com/codeforIATI/analytics/issues?state=open">Report bugs, and request features using Github issues</a>.<br/>
+
+          Generated at <em>2022-07-23 09:37:44 UTC</em> from data downloaded at <em>2022-07-22 21:45:36 UTC</em>.<br/>
+
+          (NB This is the time the download task started. Any changes made after this time may not be reflected).<br />
+
+          For details on how often these updates are applied, see the <a href="/faq.html">Code for IATI Analytics FAQ</a>.
+    </div>
+</div>
+
+<script src="//codeforiati.org/sidebar/sidebar.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.13.3/jquery.tablesorter.widgets.min.js"></script>
+
+<script>$(function() { $("table.table:not(.exploring-data)").tablesorter(); });</script>
+<script>$(function() { $("table.exploring-data").tablesorter({textExtraction:{3: function(node,table,cellIndex) { return $(node).attr('data-bytes'); } }}); });</script>
+
+  
+    <script>
+$('.popover-html').popover({
+  html: true
+})
+    </script>
+
+</body>
+</html>
